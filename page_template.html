@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>${title}</title>
+        <link rel="stylesheet" href="/static/css/blog_page.css">
+    </head>
+    <body>
+        <div id="world">
+            <div id="header"></div>
+            <div id="content">
+                <pre id="markdown_src" style="display:none">${content}</pre>
+            </div>
+            <div id="footer"></div>
+        </div>
+    </body>
+    <script src="/static/lib/marked.js" charset="utf-8"></script>
+    <script src="/static/lib/jquery-1.9.1.js" charset="utf-8"></script>
+    <script src="/static/js/blog_page.js" charset="utf-8"></script>
+    <script src="/static/lib/run_prettify.js" charset="utf-8"></script>
+</html>
