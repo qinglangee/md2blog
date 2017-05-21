@@ -80,7 +80,7 @@ def getLink(file):
 # 创建首页
 def create_index(files):
     files.reverse();
-    content = C.readFile("index_templet.html")
+    content = C.readFile("templet/index_templet.html")
     links = ""
     for file in files:
         links = links + "<div>"
@@ -93,6 +93,15 @@ def create_index(files):
         links = links + "</div>"
     content = content.replace("${links}", links)
     C.writeFile(os.path.join(G.dest_path, "index.html"), content)
+# 创建列表页
+def create_list(files):
+    files.reverse();
+    content = C.readFile("templet/list_templet.html")
+    links = ""
+    for file in files:
+        links = links + "<a class='title' href='"+getLink(file)+"'>" + file["title"] + "</a><br>"
+    content = content.replace("${links}", links)
+    C.writeFile(os.path.join(G.dest_path, "list.html"), content)
 # 读取 markdown, 转义尖括号
 def read_markdown(path, lines= 0):
     markdown = ""
@@ -115,7 +124,7 @@ gci(G.src_path)
 all_files.sort(lambda p1, p2:cmp(p1["name"], p2["name"]))
 print len(all_files)
 index = 0;
-templet=C.readFile("page_template.html")
+templet=C.readFile("templet/page_template.html")
 while index < len(all_files):
     file = all_files[index]
     path = os.path.join(G.dest_path, "blog")
@@ -131,6 +140,7 @@ while index < len(all_files):
     index = index+1
 
 create_index(all_files[-10:])
+create_list(all_files)
 copy_static_resources()
 print "index is", index
 
