@@ -79,6 +79,7 @@ def getLink(file):
     return "/blog/" + file["parent"] + "/" + file["year"] + "/" + file["name"] + ".html"
 # 创建首页
 def create_index(files):
+    files.reverse();
     content = C.readFile("index_templet.html")
     links = ""
     for file in files:
