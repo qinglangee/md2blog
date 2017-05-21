@@ -15,3 +15,9 @@
 
 首页,下一页链接
 评论模块
+
+
+用到的js库:  
+[marked.js](https://github.com/chjj/marked/)-markdown语法解析  
+[Google Code Prettify](https://github.com/google/code-prettify) - 代码语法高亮  
+[jquery](https://github.com/jquery/jquery)-jquery 无需解释  
