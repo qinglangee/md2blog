@@ -5,4 +5,4 @@ dest_path='/home/zhch/temp/static_blog'
 
 # for aliyun
 # src_path='/home/zhch/git_repo/nut_wordpress'
-# dest_path='/home/zhch/document/blog_static'
+# dest_path='/srv/blog_static'

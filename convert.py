@@ -46,6 +46,8 @@ def add_file(filepath):
 # 根据 file ,创建一个html文件,放到path中    
 def create_html(templet, file, dest_path):
     content = C.readFile(file["path"]);
+    content = content.replace("<", "&lt;")
+    content = content.replace(">", "&gt;")
     temp = templet.replace("${content}", content);
     C.writeFile(os.path.join(dest_path, file["name"] + ".html"), temp);
 
