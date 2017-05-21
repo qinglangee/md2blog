@@ -1,2 +1,7 @@
 
 #world{width:900px;margin: auto;}
+
+#footer{position:relative;}
+
+.pre_link{position: relative;float: left;}
+.next_link{position: relative;float: right;}

@@ -48,6 +48,23 @@ def readFile(filename):
     with open(filename, 'r') as file:
         content = file.read()
     return content
+# 读取文件内容,以行分割,存储到一个列表, 可以设置只读前 max 行
+def readLines(filename, max=0):
+    lines = [];
+    f = open(filename, "r")
+    if (max > 0):
+        index = 1;  
+        for line in f:  
+            lines.append(line);
+            index = index + 1
+            if(index > max):
+                break
+    else:
+        for line in f:  
+            lines.append(line);
+        
+    f.close()  
+    return lines;
 
 def nouse():
     return 0

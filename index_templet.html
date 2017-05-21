@@ -3,10 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="/static/css/index.css">
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?e6ce89dd36ba9774fb9056e872420d19";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
     </head>
     <body>
-        <div>
+        <div id="content">
             ${links}
         </div>
     </body>
+    <script src="/static/lib/marked.js" charset="utf-8"></script>
+    <script src="/static/lib/jquery-1.9.1.js" charset="utf-8"></script>
+    <script src="/static/js/md_convert.js" charset="utf-8"></script>
+    <script src="/static/lib/run_prettify.js" charset="utf-8"></script>
 </html>
