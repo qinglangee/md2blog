@@ -3,5 +3,6 @@
 
 #footer{position:relative;}
 
+.clear{clear:both;}
 .pre_link{position: relative;float: left;}
 .next_link{position: relative;float: right;}

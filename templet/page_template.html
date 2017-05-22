@@ -25,8 +25,40 @@
             <div id="footer">
                 <div class="pre_link"> <a href="${pre_link}">${pre_title}</a> </div>
                 <div class="next_link"> <a href="${next_link}">${next_title}</a> </div>
+                <div class="clear"></div>
             </div>
+            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+            <div id="SOHUCS" ></div>
         </div>
+        
+
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cyt1BR9ie',
+conf: 'prod_1ea1dc75178be3e8cf977592cc3297bf'
+});
+</script>
+
+
+
+<!--
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<script>
+var cloudTieConfig = {
+  url: document.location.href, 
+  sourceId: "",
+  productKey: "7c0dbca6fc7a4234b2653b199f68e792",
+  target: "cloud-tie-wrapper"
+};
+var yunManualLoad = true;
+Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+</script>
+-->
+
+
+
+
     </body>
     <script src="/static/lib/marked.js" charset="utf-8"></script>
     <script src="/static/lib/jquery-1.9.1.js" charset="utf-8"></script>
