@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>${title}</title>
+        <link rel="stylesheet" href="/static/css/reset.css">
         <link rel="stylesheet" href="/static/css/blog_page.css">
         <script>
         var _hmt = _hmt || [];
@@ -15,10 +16,12 @@
         </script>
     </head>
     <body>
-        <div id="world">
-            <div id="header">
+        <div id="header">
+            <div id="header_content">
                 <a href="/">回首页</a>
             </div>
+        </div>
+        <div id="world">
             <div class="markdown_box">
                 <pre class="markdown_src">${content}</pre>
             </div>

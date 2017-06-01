@@ -1,5 +1,10 @@
+body{background-color: #F4F3F2;}
 
-#world{width:900px;margin: auto;}
+#header{width:100%;height:50px;background-color: #5BC0EA;margin-bottom: 10px;}
+#header_content{width:900px;margin: auto; padding: 10px;}
+#world{width:900px;margin: auto; padding: 10px;
+    background-color: white;
+}
 
 #footer{position:relative;}
 
