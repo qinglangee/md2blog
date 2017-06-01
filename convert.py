@@ -99,7 +99,7 @@ def create_list(files):
     content = C.readFile("templet/list_templet.html")
     links = ""
     for file in files:
-        links = links + "<a class='title' href='"+getLink(file)+"'>" + file["title"] + "</a><br>"
+        links = links + "<a class='title' target='_blank' href='"+getLink(file)+"'>" + file["title"] + "</a><br>"
     content = content.replace("${links}", links)
     C.writeFile(os.path.join(G.dest_path, "list.html"), content)
 # 读取 markdown, 转义尖括号
