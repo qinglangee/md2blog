@@ -4,12 +4,14 @@ body{background-color: #F4F3F2;}
 #header_content{width:900px;margin: auto; padding: 10px;}
 #header_content .search{float:right;width: 400px;}
 
-#world{width:900px;margin: auto; padding: 10px;
+#world{width:900px;margin: auto; padding-left: 30px;padding-right: 30px;padding-top: 10px;
     background-color: white;
+    border-radius: 15px;
 }
 
 h1{display: none;}
 
+.post{margin-top: 10px;margin-bottom: 30px;}
 .title{
     font-size: 24px;
     font-weight: bold;

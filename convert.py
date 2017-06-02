@@ -83,7 +83,7 @@ def create_index(files):
     content = C.readFile("templet/index_templet.html")
     links = ""
     for file in files:
-        links = links + "<div>"
+        links = links + "<div class='post'>"
         links = links + "<a class='title' href='"+getLink(file)+"'>" + file["title"] + "</a><br>"
         links = links + "<div class='markdown_box'>"
         links = links + "<pre class='markdown_src'>"
