@@ -6,7 +6,7 @@ body{background-color: #F4F3F2;}
 
 #world{width:900px;margin: auto; padding-left: 30px;padding-right: 30px;padding-top: 10px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 h1{display: none;}

@@ -4,6 +4,7 @@ body{background-color: #F4F3F2;}
 #header_content{width:900px;margin: auto; padding: 10px;}
 #world{width:900px;margin: auto; padding: 10px;
     background-color: white;
+    border-radius: 10px;
 }
 
 #footer{position:relative;}
