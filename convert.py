@@ -15,6 +15,7 @@ import shutil
 
 all_files=[];
 
+# 递归处理目录
 def gci (path):
     """this is a statement"""
     parents = os.listdir(path)
