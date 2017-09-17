@@ -15,6 +15,8 @@ import shutil
 
 all_files=[];
 
+except_dirs=["write"];
+
 # 递归处理目录
 def gci (path):
     """this is a statement"""
@@ -22,6 +24,16 @@ def gci (path):
     for parent in parents:
         if(parent == ".git"):
             continue
+
+        # 跳过不需要处理的目录
+        isExcept = False
+        for exp_dir in except_dirs:
+            if parent == exp_dir:
+                isExcept = True
+        if isExcept:
+            print "==except dir:", parent
+            continue
+
         child = os.path.join(path,parent)
         #print(child)
         if os.path.isdir(child):
@@ -53,7 +65,7 @@ def add_file(filepath):
             file["title"] = title;
         all_files.append(file)
     else:
-        print "not blog file:", name
+        print "not blog file:", parent, name
     
 # 根据 file ,创建一个html文件,放到path中    
 def create_html(templet, file, dest_path, pre_file=None, next_file=None):
